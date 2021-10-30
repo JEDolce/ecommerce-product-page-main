@@ -1,0 +1,73 @@
+@use "customs" as *;
+@use "mixins" as *;
+
+.navbar {
+  height: 4rem;
+  position: relative;
+
+  .container {
+    @include flexRow;
+    @include absCenter;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menu {
+    @include flexRow;
+    @include alignCenter;
+    margin-left: 1.5rem;
+    height: 1.5rem;
+
+    img {
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem 1rem;
+    }
+
+    .list {
+      display: none;
+
+      @media (min-width: 992px) {
+        display: flex;
+
+        ul {
+          @include flexRow;
+          justify-content: left;
+          align-items: center;
+
+          li {
+            list-style: none;
+            margin-right: 1rem;
+            color: $Dark-grayish-blue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .icons {
+    @include flexRow;
+    width: 6rem;
+    height: 1.5rem;
+
+    @media (min-width: 992px) {
+      height: 2rem;
+      margin-right: 3rem;
+    }
+
+    &--1 {
+      transform: scale(0.8);
+      cursor: pointer;
+    }
+
+    &--2 {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+  }
+}

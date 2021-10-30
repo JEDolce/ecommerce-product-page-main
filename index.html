@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>E-commerce product page</title>
+  <!-- Agregar fuente -->
+</head>
+
+<body>
+  <!-- Navbar -->
+  <section class="navbar">
+    <div class="container">
+      <div class="menu">
+        <img class="menu-image" src="dist/images/icon-menu.svg" alt="">
+        <h1>sneakers</h1>
+        <div class="list">
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="icons">
+        <img class="icons--1" src="dist/images/icon-cart.svg" alt="">
+        <img class="icons--2" src="dist/images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+
+    <div class="product-images">
+      <div class="carousel">
+        <div class="carousel--indicators">
+          <div class="carousel-image">
+            <img src="dist/images/image-product-1.jpg" alt="">
+          </div>
+          <div class="carousel-image">
+            <img src="dist/images/image-product-2.jpg" alt="">
+          </div>
+          <div class="carousel-image">
+            <img src="dist/images/image-product-3.jpg" alt="">
+          </div>
+          <div class="carousel-image">
+            <img src="dist/images/image-product-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel--inner">
+          <img src="dist/images/image-product-1.jpg" alt="">
+        </div>
+        <button class="carousel-control-prev" type="button">
+          <span class="carousel-control-prev-icon"><img src="dist/images/icon-previous.svg" alt=""></span>
+        </button>
+        <button class="carousel-control-next" type="button">
+          <span class="carousel-control-next-icon"><img src="dist/images/icon-next.svg" alt=""></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="product-text">
+      <h5>Sneaker Company</h5>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="price">
+        <div class="price--discount">
+          <h2>$125.00</h2>
+          <h4>50%</h4>
+        </div>
+        <p>$250.00</p>
+      </div>
+
+      <div class="buttons">
+        <div class="counter">
+          <img src="dist/images/icon-minus.svg" alt="">
+          <p>0</p>
+          <img src="dist/images/icon-plus.svg" alt="">
+        </div>
+        <a href="#" class=""><img src="dist/images/icon-cart.svg" alt="">Add to cart</a>
+      </div>
+
+    </div>
+  </section>
+</body>
+<script src="dist/js/app.js"></script>
+
+</html>

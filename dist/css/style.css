@@ -1,0 +1,167 @@
+.navbar {
+  height: 4rem;
+  position: relative;
+}
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+  height: 1.5rem;
+}
+.navbar .menu img {
+  cursor: pointer;
+}
+.navbar .menu h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem 1rem;
+}
+.navbar .menu .list {
+  display: none;
+}
+@media (min-width: 992px) {
+  .navbar .menu .list {
+    display: flex;
+  }
+  .navbar .menu .list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  .navbar .menu .list ul li {
+    list-style: none;
+    margin-right: 1rem;
+    color: #68707d;
+    cursor: pointer;
+  }
+}
+.navbar .icons {
+  display: flex;
+  flex-direction: row;
+  width: 6rem;
+  height: 1.5rem;
+}
+@media (min-width: 992px) {
+  .navbar .icons {
+    height: 2rem;
+    margin-right: 3rem;
+  }
+}
+.navbar .icons--1 {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.navbar .icons--2 {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.products .product-images {
+  width: 100%;
+}
+.products .product-images .carousel--indicators {
+  display: none;
+}
+.products .product-images .carousel--inner img {
+  width: 100vw;
+  max-height: 21rem;
+  cursor: pointer;
+}
+.products .product-text {
+  margin: 1.5rem;
+}
+.products .product-text h5 {
+  color: #ff7d1a;
+  text-transform: uppercase;
+}
+.products .product-text h1 {
+  width: 70%;
+}
+.products .product-text p {
+  color: #68707d;
+  line-height: 1.5rem;
+}
+.products .product-text .price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.products .product-text .price--discount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.products .product-text .price--discount h4 {
+  background-color: rgba(255, 125, 26, 0.2);
+  color: #ff7d1a;
+  margin-left: 1.5rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+  border-radius: 7px;
+}
+.products .product-text .price p {
+  color: #b6bcc8;
+  font-weight: 700;
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+.products .product-text .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products .product-text .buttons .counter {
+  width: 95%;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f7f8fd;
+}
+.products .product-text .buttons .counter p {
+  color: black;
+}
+.products .product-text .buttons .counter img {
+  cursor: pointer;
+}
+.products .product-text .buttons a {
+  width: 95%;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: #ff7d1a;
+  font-weight: 700;
+  box-shadow: 0px 15px 40px rgba(255, 125, 26, 0.4);
+}
+.products .product-text .buttons a img {
+  margin-right: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Kumbh Sans", sans-serif;
+}/*# sourceMappingURL=style.css.map */

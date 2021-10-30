@@ -1,0 +1,111 @@
+@use "customs" as *;
+@use "mixins" as *;
+
+.products {
+
+  .product-images {
+    width: 100%;
+
+    .carousel {
+        
+      &--indicators {
+        display: none;
+
+        &--image {
+
+        }
+      }
+
+      &--inner {
+        
+        img {
+          width: 100vw;
+          max-height: 21rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .product-text {
+    margin: 1.5rem;
+
+    h5 {
+      color: $Orange;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      width: 70%;
+    }
+
+    p {
+      color: $Dark-grayish-blue;
+      line-height: 1.5rem;
+    }
+
+    .price {
+      @include flexRow;
+      align-items: center;
+      justify-content: space-between;
+
+      &--discount {
+        @include flexRow;
+        align-items: center;
+
+        h4 {
+          background-color: rgba($color: $Orange, $alpha: 0.2);
+          color: $Orange;
+          margin-left: 1.5rem;
+          padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+          border-radius: 7px;
+        }
+      }
+
+      p {
+        color: $Grayish-blue;
+        font-weight: 700;
+        text-decoration: line-through;
+        margin-right: 1rem;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .counter {
+        @include btn;
+        @include flexRow;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $Light-grayish-blue;
+
+        p {
+          color: $Black;
+        }
+
+        img {
+          cursor: pointer;
+        }
+      }
+
+      a {
+        @include btn;
+        @include flexRow;
+        @include alignCenter;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: $White;
+        background-color: $Orange;
+        font-weight: 700;
+        box-shadow: 0px 15px 40px rgba($color: $Orange, $alpha: 0.4);
+
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
