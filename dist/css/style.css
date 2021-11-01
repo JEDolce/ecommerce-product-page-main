@@ -75,10 +75,41 @@
 .products .product-images .carousel--indicators {
   display: none;
 }
-.products .product-images .carousel--inner img {
+.products .product-images .carousel--inner {
+  position: relative;
+}
+.products .product-images .carousel--inner .product-img {
   width: 100vw;
   max-height: 21rem;
   cursor: pointer;
+}
+.products .product-images .carousel--inner button {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  height: 1.9rem;
+  width: 1.9rem;
+}
+.products .product-images .carousel--inner .carousel-control-prev {
+  left: 0.5rem;
+}
+.products .product-images .carousel--inner .carousel-control-prev img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%) scale(0.75);
+}
+.products .product-images .carousel--inner .carousel-control-next {
+  right: 0.5rem;
+}
+.products .product-images .carousel--inner .carousel-control-next img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -50%) scale(0.75);
 }
 .products .product-text {
   margin: 1.5rem;
@@ -154,8 +185,90 @@
   font-weight: 700;
   box-shadow: 0px 15px 40px rgba(255, 125, 26, 0.4);
 }
-.products .product-text .buttons a img {
+.products .product-text .buttons a .svg {
   margin-right: 1rem;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.overlay {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#slide-menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  height: 100%;
+  width: 65%;
+  transform: translateX(-100%);
+  background-color: white;
+}
+#slide-menu img {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+#slide-menu ul {
+  margin-top: 6rem;
+  padding-left: 2rem;
+}
+#slide-menu ul li {
+  list-style-type: none;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+#slide-menu ul li:hover {
+  color: #68707d;
+}
+
+.slide-in {
+  -webkit-animation: slide-in 0.5s forwards;
+          animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  -webkit-animation: slide-out 0.5s forwards;
+          animation: slide-out 0.5s forwards;
 }
 
 body {

@@ -11,17 +11,49 @@
       &--indicators {
         display: none;
 
-        &--image {
 
-        }
       }
 
       &--inner {
+        position: relative;
         
-        img {
+        .product-img {
           width: 100vw;
           max-height: 21rem;
           cursor: pointer;
+        }
+
+        button {
+          background-color: $White;
+          position: absolute;
+          top: 50%;
+          cursor: pointer;
+          border: none;
+          border-radius: 50%;
+          height: 1.9rem;
+          width: 1.9rem;
+        }
+
+        .carousel-control-prev {
+          left: 0.5rem;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-55%, -50%) scale(0.75);
+          }
+        }
+
+        .carousel-control-next {
+          right: 0.5rem;
+
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -50%) scale(0.75);
+          }
         }
       }
     }
@@ -102,7 +134,7 @@
         font-weight: 700;
         box-shadow: 0px 15px 40px rgba($color: $Orange, $alpha: 0.4);
 
-        img {
+        .svg {
           margin-right: 1rem;
         }
       }

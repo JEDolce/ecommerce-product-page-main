@@ -1,0 +1,55 @@
+@use "customs" as *;
+@use "mixins" as *;
+@use "animations" as *;
+
+.overlay {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+#slide-menu {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    transform: translateX(-100%);
+    background-color: $White;
+    
+
+    img {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+        cursor: pointer;
+    }
+
+    ul {
+        margin-top: 6rem;
+        padding-left: 2rem;
+
+        li {
+            list-style-type: none;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $Dark-grayish-blue;
+            }
+        }
+    }
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+}

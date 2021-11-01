@@ -3,6 +3,8 @@
 @use "navbar";
 @use "products";
 @use "mixins";
+@use "overlay";
+@use "animations";
 
 body {
     margin: 0;
