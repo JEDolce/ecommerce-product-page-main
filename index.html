@@ -57,8 +57,18 @@
   <!-- Products -->
   <section class="products">
 
-    <div class="product-images">
+    <div class="container">
+      <div class="product-images">
       <div class="carousel">
+        <div class="carousel--inner">
+          <img class="product-img" src="dist/images/image-product-1.jpg" alt="">
+          <button class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"><img src="dist/images/icon-previous.svg" alt=""></span>
+          </button>
+          <button class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"><img src="dist/images/icon-next.svg" alt=""></span>
+          </button>
+        </div>
         <div class="carousel--indicators">
           <div class="carousel-image">
             <img src="dist/images/image-product-1.jpg" alt="">
@@ -73,24 +83,15 @@
             <img src="dist/images/image-product-4.jpg" alt="">
           </div>
         </div>
-        <div class="carousel--inner">
-          <img class="product-img" src="dist/images/image-product-1.jpg" alt="">
-          <button class="carousel-control-prev" type="button">
-            <span class="carousel-control-prev-icon"><img src="dist/images/icon-previous.svg" alt=""></span>
-          </button>
-          <button class="carousel-control-next" type="button">
-            <span class="carousel-control-next-icon"><img src="dist/images/icon-next.svg" alt=""></span>
-          </button>
-        </div>
       </div>
-    </div>
-
-    <div class="product-text">
+      </div>
+    
+      <div class="product-text">
       <h5>Sneaker Company</h5>
       <h1>Fall Limited Edition Sneakers</h1>
       <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-
+    
       <div class="price">
         <div class="price--discount">
           <h2>$125.00</h2>
@@ -98,7 +99,7 @@
         </div>
         <p>$250.00</p>
       </div>
-
+    
       <div class="buttons">
         <div class="counter">
           <img src="dist/images/icon-minus.svg" alt="">
@@ -111,7 +112,7 @@
               fill="#FFF" fill-rule="nonzero" />
           </svg> Add to cart</a>
       </div>
-
+      </div>
     </div>
   </section>
 </body>
