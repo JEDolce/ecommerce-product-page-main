@@ -133,7 +133,15 @@
   }
 }
 .products .product-images .carousel--inner {
+  display: flex;
+  flex: row;
   position: relative;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .products .product-images .carousel--inner {
+    overflow: visible;
+  }
 }
 .products .product-images .carousel--inner .product-img {
   width: 100vw;

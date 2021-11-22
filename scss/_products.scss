@@ -25,7 +25,14 @@
       }
 
       &--inner {
+        display: flex;
+        flex: row;
         position: relative;
+        overflow: hidden;
+
+        @media (min-width: 992px) {
+          overflow: visible;
+        }
 
         .product-img {
           width: 100vw;
